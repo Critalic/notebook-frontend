@@ -4,7 +4,7 @@ import { useAuthContext } from '../hooks/useAuthContext';
 import { format } from 'date-fns';
 import styles from '../styles/styles.module.scss'
 
-const DiaryPost = () => {
+const NotebookPost = () => {
     const { id } = useParams();
     const [ post, setPost ] = useState(null);
     const { user } = useAuthContext();
@@ -35,4 +35,4 @@ const DiaryPost = () => {
     );
 };
 
-export default DiaryPost;
+export default NotebookPost;
